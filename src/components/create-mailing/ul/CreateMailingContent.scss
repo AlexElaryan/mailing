@@ -1,0 +1,153 @@
+.create-mailing {
+  &__title {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-blue);
+  }
+
+  &__select-channal {
+    margin-top: 12px;
+    display: flex;
+    gap: 1px;
+    padding: 4px;
+    border-radius: 8px;
+    background-color: var(--color-light-blue);
+    width: fit-content;
+
+    button {
+      border: none;
+      border-radius: 8px;
+      padding: 8px 12px;
+      background-color: transparent;
+      color: var(--color-dark-blue);
+      cursor: pointer;
+      transition: all 0.2s;
+      will-change: transform;
+
+      &:active {
+        scale: 0.98;
+      }
+    }
+  }
+}
+
+.create-mailing__name {
+  margin-top: 13px;
+
+  &-block {
+    margin-top: 5px;
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: 1px solid var(--color-blue);
+    width: 500px;
+  }
+}
+
+.create-mailing__date {
+  background-color: var(--color-light-blue);
+  margin-top: 24px;
+  border-radius: 10px;
+  padding: 20px;
+
+  h5 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  &_wrapper {
+    display: grid;
+    gap: 28px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &_inner {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  &-select {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    &-span {
+      padding: 10px 18px;
+      background-color: #fff;
+      border-radius: 8px;
+      border: 1px solid var(--color-blue);
+      width: 100%;
+      color: var(--color-blue);
+    }
+  }
+}
+
+.create-mailing__count-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  >div {
+    position: relative;
+
+    &:hover .create-mailing__count-info {
+      display: block;
+    }
+
+    >svg {
+      cursor: pointer;
+    }
+  }
+
+  .create-mailing__count-info {
+    width: 255px;
+    max-width: 215px;
+    position: absolute;
+    display: none;
+    background-color: var(--color-blue);
+    padding: 8px 20px;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(100% + 6px);
+    border-radius: 4px;
+
+    svg {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -5px;
+    }
+
+
+  }
+}
+
+
+
+.create-mailing__range-decor {
+  width: 28px;
+  height: 1px;
+  background-color: var(--color-blue);
+}
+
+.create-mailing__range-input {
+  padding: 10px 18px;
+  background-color: #fff;
+  border-radius: 8px;
+  border: 1px solid var(--color-blue);
+  width: 100%;
+  color: var(--color-blue);
+
+  &::placeholder {
+    color: var(--color-blue);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

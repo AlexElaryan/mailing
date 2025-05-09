@@ -1,0 +1,22 @@
+.mailing__item-title{
+  font-size: 16px;
+  span {
+    font-weight: 600;
+  }
+}
+
+.mailing__btns-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 8px;
+  button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    &:active{
+      scale: 0.95;
+    }
+  }
+}

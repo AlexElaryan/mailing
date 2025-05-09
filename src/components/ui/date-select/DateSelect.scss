@@ -1,0 +1,72 @@
+.date-select{
+  position: absolute;
+  padding: 20px 24px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  right: 0;
+  top: 100%;
+  box-shadow: 1px 1px 1px 1px #0000000b;
+  border-radius: 20px;
+  z-index: 30;
+  
+  &__inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 544px;
+    gap: 24px;
+  }
+
+  &__title{
+    color: var(--color-blue);
+  }
+
+  &__wrapper{
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  &__time-zone{
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  h5{
+    font-weight: 600;
+    font-size: 18px;
+  }
+}
+
+
+/* Уменьшаем размеры календаря */
+.MuiCalendarPicker-root {
+  width: 250px;  /* Устанавливаем фиксированную ширину */
+  height: auto;  /* Автоматическая высота */
+  font-size: 12px;  /* Меньший размер шрифта */
+}
+
+/* Меньший размер шрифта для дней */
+.MuiPickersDay-root {
+  font-size: 12px; /* Меньший размер шрифта для дней в календаре */
+  padding: 6px;    /* Меньше отступов внутри ячеек */
+}
+
+/* Меньший размер шрифта для заголовка месяца */
+.MuiPickersCalendarHeader-root {
+  font-size: 14px; /* Меньший размер шрифта для заголовка месяца */
+}
+
+/* Уменьшаем размер кнопок перехода */
+.MuiButtonBase-root {
+  font-size: 16px; /* Меньший размер шрифта для кнопок "перехода" */
+  padding: 4px;    /* Меньше отступов на кнопках */
+}
+
+/* Контейнер для календаря */
+.date-calendar-container {
+  max-width: 300px; /* Устанавливаем максимальную ширину */
+  margin: 0 auto;   /* Центрируем календарь */
+}

@@ -1,0 +1,14 @@
+.report-interaction{
+  &__wrapper{
+    margin: -41px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__inner{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+}

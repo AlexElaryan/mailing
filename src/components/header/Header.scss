@@ -1,0 +1,16 @@
+.header{
+  margin-top: 13px;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo{
+  font-weight: 900;
+  font-size: 24px;
+  color: #fff;
+  text-transform: uppercase;
+}

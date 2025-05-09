@@ -1,0 +1,73 @@
+
+.profile-data_modal {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 50px 40px 80px 40px;
+    border: 1px solid rgba(240, 247, 255, 1);
+    box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.11);
+    background: #fff;
+    border-radius: 32px;
+
+    input {
+        padding: 13px 15px;
+        border: 1px solid rgba(240, 247, 255, 1);
+        color: var(--color-dark-blue);
+        font-size: 16px;
+        font-family: Inter;
+        outline: none;
+        border-radius: 8px;
+        background: #fff;
+    }
+
+    .profile-password {
+        width: 100%;
+        position: relative;
+    }
+
+    input[type="password"] {
+        padding-right: 40px;
+    }
+
+    .toggle-password {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        cursor: pointer;
+        width: 24px;
+        height: 24px;
+    }
+    button {
+        width: fit-content;
+        margin-top: 50px;
+    }
+}
+
+.profile-data-top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 9px;
+}
+
+.profile-data-top span {
+    padding: 10px 20px;
+    background: var(--color-light-blue);
+    border-radius: 8px;
+    margin-top: 4px;
+}
+
+.profile-data_modal-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 14px;
+    row-gap: 35px;
+}
+
+.profile-data_modal-block-item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

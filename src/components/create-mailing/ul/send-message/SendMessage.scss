@@ -1,0 +1,30 @@
+.send-message{
+  background-color: var(--color-light-blue);
+  margin-top: 24px;
+  border-radius: 10px;
+  padding: 20px;
+
+  h5{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  &__variables{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__variable{
+    height: 39px;
+    padding: 0px 15px;
+    border-radius: 8px;
+    background-color: #fff;
+    color: var(--color-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+}

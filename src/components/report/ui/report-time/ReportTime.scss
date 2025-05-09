@@ -1,0 +1,12 @@
+.report-time{
+  margin-top: 20px;
+
+  &__wrapper{
+    display: flex;
+    gap: 22px;
+  }
+}
+
+.MuiChartsLegend-root{
+  display: none !important;
+}

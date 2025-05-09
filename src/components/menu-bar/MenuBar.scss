@@ -1,0 +1,69 @@
+.menu-bar {
+    width: 300px;
+    min-width: 300px;
+    padding: 53px 53px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 32px;
+    background: #fff;
+}
+
+.menu-bar__user-info {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    
+}
+
+.menu-bar__user-info-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-bar__user-info-right > div  {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.menu-bar-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 31px;
+}
+
+.menu-bar-sec_block {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+.menu-bar-sec_item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu-bar-sec_item > div {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    cursor: pointer;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.menu-bar-sec_item  div.active-tab {
+    max-width: 160px;
+    background: var(--color-light-blue);
+}
+
+.menu-bar-sec_item  p.active-substab {
+    color: var(--color-blue);
+}
+
+.menu-bar-sec_item > div:not(:first-child) {
+    padding-left: 30px;
+}

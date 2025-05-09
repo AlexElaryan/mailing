@@ -1,0 +1,62 @@
+.selector {
+  position: relative;
+  display: inline-block;
+  
+  &__button {
+    background-color: var(--color-light-grey);
+    color: var(--color-dark-blue);
+    width: 180px;
+    font-size: 16px;
+    padding: 13px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    border: none;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: #e0efff;
+    }
+
+    &.open {
+      border-radius: 8px 8px 0px 0px;
+    }
+  }
+
+  &__arrow {
+    margin-left: 10px;
+    transition: transform 0.2s ease;
+
+    &.open {
+      transform: rotate(180deg);
+    }
+  }
+
+  &__menu {
+    position: absolute;
+    top: 83%;
+    left: 0;
+    background-color: var(--color-light-grey);
+    border-radius: 0px 0px 8px 8px;
+    border: none;
+    width: 100%;
+    margin-top: 5px;
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    color: var(--color-dark-blue);
+  }
+
+  &__item {
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    
+    &:hover {
+      background-color: #e0efff;
+    }
+  }
+}

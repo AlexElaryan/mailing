@@ -1,0 +1,13 @@
+.mailing__content{
+  // background: #fff;
+  // border-radius: 32px;
+  // width: 100%;
+  // height: 100px;
+  // margin-top: 38px;
+
+  &_top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

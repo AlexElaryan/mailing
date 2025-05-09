@@ -1,0 +1,219 @@
+@import url('./variables.scss');
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-Regular.ttf') format('truetype'),
+    url('../fonts/Inter_24pt-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-SemiBold.ttf') format('truetype'),
+    url('../fonts/Inter_24pt-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-Bold.ttf') format('truetype'),
+    url('../fonts/Inter_24pt-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter_18pt-Black.ttf') format('truetype'),
+    url('../fonts/Inter_24pt-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+
+  background-color: var(--color-blue);
+  color: var(--color-dark-blue);
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.button {
+  padding: 12px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 8px;
+  transition: all 0.2s;
+  will-change: transform;
+  cursor: pointer;
+  border: none;
+  font-weight: 600;
+  color: var(--color-light-grey);
+  background-color: var(--color-blue);
+
+  &-light {
+    color: var(--color-blue);
+    background-color: var(--color-light-grey);
+  }
+
+  &-border {
+    color: var(--color-blue);
+    background-color: transparent;
+    border: 1px solid var(--color-blue);
+  }
+
+  &:hover {
+    scale: 1.01;
+  }
+
+  &:active {
+    scale: 1;
+  }
+}
+
+.mailing__list {
+  width: 100%;
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+
+.mailing__item {
+  &-wrapper {
+    overflow: hidden;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 4fr 3fr 2fr 1fr;
+    gap: 1px;
+  }
+
+  &-content {
+    padding: 1px;
+    background-color: var(--color-light-grey);
+  }
+}
+
+.mailing__block {
+  padding: 12px;
+  display: flex;
+  gap: 4px;
+  align-items: center;
+
+  &-border-left {
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  &-border-right {
+    border-radius: 0px 10px 10px 0px;
+  }
+
+  &-white {
+    background-color: white;
+    padding: 15px 12px;
+  }
+
+  &-transparent {
+    background-color: transparent;
+    padding: 20px 12px;
+  }
+}
+
+.report-status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__wrapper {
+    width: 181px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__item {
+    div {
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-weight: 600;
+
+      div {
+        min-width: 14px;
+        min-height: 14px;
+        border-radius: 100%;
+        box-shadow: 0px 0px 4px 4px rgba(#000000, 0.05);
+      }
+    }
+
+    p {
+      color: var(--color-blue);
+    }
+  }
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Скрытие стрелок в Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.section_content {
+  height: 100%;
+  display: flex;
+  gap: 10px;
+  margin: 0 20px;
+  padding: 18px 0 26px 0;
+}
+
+.section_content>.container {
+  margin: 0;
+  flex-grow: 1;
+}
+
+.section_content > .container > .content__wrapper {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.menu-bar__user-info__avatar {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 55px;
+  min-width: 55px;
+  height: 55px;
+}
+
+.modal-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  backdrop-filter: blur(4.099999904632568px);
+  background: rgba(0, 0, 0, 0.15);
+}

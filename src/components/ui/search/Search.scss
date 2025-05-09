@@ -1,0 +1,27 @@
+.search{
+  position: relative;
+  
+  &__input{
+    width: 382px;
+    padding: 16px 40px;
+    background-color: var(--color-light-grey);
+    border: none;
+    border-radius: 8px;
+    color: var(--color-blue);
+    font-size: 14px;
+    
+    &:focus{
+      outline:none
+    }
+
+    &::placeholder{
+      color: var(--color-blue);
+    }
+  }
+
+  &__image{
+    position: absolute;
+    top: 16px;
+    left: 16px;
+  }
+}
